@@ -10931,21 +10931,21 @@ for (const marker of geojson.features) {
     `)
   });
 
-el.addEventListener('click', () => {
-    if (window.confirm('If you click "ok" you will be redirected to (https://www.travel-advisory.info/) to view the CURRENT TRAVEL ADVISORY WARNINGS for the selected country. Cancel will load additional details'))
-    {
-    window.location.href=("https://www.travel-advisory.info/widget-no-js?countrycode="+(marker.properties.ISO_3166));
-}});
-el.addEventListener('click', () => {
-  if (window.confirm('If you click "ok" you will be redirected to (https://www.google.com/finance/) to view the CURRENT EXCHANGE RATE for the selected country. Cancel will load additional details'))
-  {
-  window.location.href=("https://www.google.com/finance/quote/USD-"+(marker.properties.Currency_Code));
-}});
-el.addEventListener('click', () => {
-  if (window.confirm('If you click "ok" you will be redirected to (https://www.accuweather.com/) to view the CURRENT WEATHER FORECAST for the selected country. Cancel will load additional details'))
-  {
-  window.location.href=("https://www.accuweather.com/en/"+(marker.properties.ISO_3166)+"/national/weather-forecast-maps");
-}});
+//el.addEventListener('click', () => {
+   // if (window.confirm('If you click "ok" you will be redirected to (https://www.travel-advisory.info/) to view the CURRENT TRAVEL ADVISORY WARNINGS for the selected country. Cancel will load additional details'))
+  //  {
+  //  window.location.href=("https://www.travel-advisory.info/widget-no-js?countrycode="+(marker.properties.ISO_3166));
+//}});
+//el.addEventListener('click', () => {
+//  if (window.confirm('If you click "ok" you will be redirected to (https://www.google.com/finance/) to view the CURRENT EXCHANGE RATE for the selected country. Cancel will load additional details'))
+ // {
+ // window.location.href=("https://www.google.com/finance/quote/USD-"+(marker.properties.Currency_Code));
+//}});
+//el.addEventListener('click', () => {
+//  if (window.confirm('If you click "ok" you will be redirected to (https://www.accuweather.com/) to view the CURRENT WEATHER FORECAST for the selected country. Cancel will load additional details'))
+ // {
+ // window.location.href=("https://www.accuweather.com/en/"+(marker.properties.ISO_3166)+"/national/weather-forecast-maps");
+//}});
   // Add markers to the map.
   new mapboxgl.Marker(el)
   .setLngLat(marker.geometry.coordinates)
